@@ -1,0 +1,86 @@
+{
+  "livestreams": [
+    {
+      "id": "50128bae-e954-4233-8e15-cd5867a31370",
+      "stream_date": "2022-12-17T04:52:43Z",
+      "title": "syndicate B2C architectures",
+      "thumbnail": "https://images.unsplash.com/photo-1559523161-0fc0d8b38a7a?q=80&w=3280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "d9f25760-7263-426a-b4d7-a25e14a26f03",
+      "stream_date": "2022-06-09T11:58:23Z",
+      "title": "extend best-of-breed systems",
+      "thumbnail": "https://images.unsplash.com/photo-1561491431-71b89da6056a?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "73780c3d-2f09-4ea0-b9c0-50bdf2a9ba0a",
+      "stream_date": "2022-10-07T23:10:08Z",
+      "title": "harness virtual niches",
+      "thumbnail": "https://images.unsplash.com/photo-1580171401298-4c2c0c44cc43?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGpvdXJuYWxpc3R8ZW58MHx8MHx8fDI%3D"
+    },
+    {
+      "id": "4448fb6d-f55c-4975-8b0c-14d5356d807b",
+      "stream_date": "2022-01-25T06:12:26Z",
+      "title": "incentivize enterprise web-readiness",
+      "thumbnail": "https://images.unsplash.com/photo-1596801129861-8592c97db6ad?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fGpvdXJuYWxpc3R8ZW58MHx8MHx8fDI%3D"
+    },
+    {
+      "id": "997afe05-d0fa-44c2-b62e-555062807623",
+      "stream_date": "2022-08-20T07:38:40Z",
+      "title": "scale leading-edge methodologies"
+    },
+    {
+      "id": "dad18f0f-d753-47b7-9393-e30630a394cd",
+      "stream_date": "2022-08-27T15:58:41Z",
+      "title": "brand viral infomediaries"
+    },
+    {
+      "id": "18813033-6113-4da8-ad75-2a209da6380f",
+      "stream_date": "2024-10-17T20:05:31Z",
+      "title": "revolutionize seamless infomediaries"
+    },
+    {
+      "id": "449e40c9-1b3a-4a33-931f-5172b5abaf39",
+      "stream_date": "2022-08-11T07:26:11Z",
+      "title": "architect 24/365 convergence"
+    },
+    {
+      "id": "386e49d7-3ff1-476a-82b9-b9a61870b3b3",
+      "stream_date": "2022-04-30T05:45:24Z",
+      "title": "utilize customized e-commerce"
+    },
+    {
+      "id": "9fbaaba2-b6d0-442e-83fe-529212062a4c",
+      "stream_date": "2022-08-04T05:43:00Z",
+      "title": "reinvent ubiquitous methodologies"
+    },
+    {
+      "id": "",
+      "stream_date": "2022-08-04T05:43:00Z",
+      "title": "reinvent ubiquitous methodologies"
+    },
+    {
+      "id": null,
+      "stream_date": "2022-08-04T05:43:00Z",
+      "title": "reinvent ubiquitous methodologies"
+    },
+    {
+      "stream_date": "2022-08-04T05:43:00Z",
+      "title": "reinvent ubiquitous methodologies"
+    },
+    {
+      "id": "undefined-stream-date",
+      "title": "reinvent ubiquitous methodologies"
+    },
+    {
+      "id": "empty-stream-date",
+      "stream_date": "",
+      "title": "reinvent ubiquitous methodologies"
+    },
+    {
+      "id": "null-stream-date",
+      "stream_date": null,
+      "title": "reinvent ubiquitous methodologies"
+    }
+  ]
+}

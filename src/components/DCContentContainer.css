@@ -1,0 +1,16 @@
+.dc-container {
+    border: 2px solid #0066cc;
+    border-radius: 4px;
+    padding: 1rem;
+    background: white;
+  }
+  
+  .container-label {
+    background: #0066cc;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }

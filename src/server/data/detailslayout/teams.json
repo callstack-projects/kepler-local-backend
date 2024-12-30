@@ -1,0 +1,21 @@
+{
+    "id": "teams",
+    "layout_type": "teams",
+    "layout_title": "teams layout title",
+    "layoutElements": [
+      {
+        "layoutElements": [
+          {
+            "displayProps": {
+              "variant": "headline"
+            },
+            "id": "containerlivestreams-text1",
+            "text": "CONTENT FOR TEAMS COMING FROM API",
+            "elementType": "DCText"
+          }
+        ],
+        "title": null,
+        "elementType": "DCContentContainer"
+      }
+    ]
+  }

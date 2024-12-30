@@ -1,0 +1,137 @@
+{
+    "id": "documentaries",
+    "layout_type": "documentaries",
+    "layout_title": "documentaries layout title",
+    "layoutElements": [
+      {
+        "layoutElements": [
+          {
+            "layoutElements": [
+              {
+                "id": "containera-imagetile1",
+                "description": "",
+                "image": {
+                  "url": "https://picsum.photos/id/5"
+                },
+                "displayProps": {
+                  "size": "custom",
+                  "customWidth": 500,
+                  "customHeight": 200
+                },
+                "targetUrl": {
+                  "url": "details/documentaries"
+                },
+                "title": "TileWithImage 1",
+                "elementType": "DCImageTile"
+              }
+            ],
+            "displayProps": {
+              "horizontalSpacing": 0
+            },
+            "title": null,
+            "elementType": "DCContentContainer"
+          },
+          {
+            "layoutElements": [
+              {
+                "description": "",
+                "displayProps": {
+                  "size": "small"
+                },
+                "id": "containera-subcontainer-imagetile1",
+                "image": {
+                  "url": "https://picsum.photos/id/6"
+                },
+                "targetUrl": {
+                  "url": "details/documentaries"
+                },
+                "title": "Subsection of Section A DCImageTile 1",
+                "elementType": "DCImageTile"
+              },
+              {
+                "description": "",
+                "displayProps": {
+                  "size": "small"
+                },
+                "id": "containera-subcontainer-imagetile2",
+                "image": {
+                  "url": "https://picsum.photos/id/237"
+                },
+                "targetUrl": {
+                  "url": "details/documentaries"
+                },
+                "title": "Subsection of Section A DCImageTile 2",
+                "elementType": "DCImageTile"
+              },
+              {
+                "description": "",
+                "displayProps": {
+                  "size": "small"
+                },
+                "id": "containera-subcontainer-imagetile3",
+                "image": {
+                  "targetUrl": "",
+                  "url": "https://picsum.photos/id/239"
+                },
+                "targetUrl": {
+                  "url": "details/documentaries"
+                },
+                "title": "Subcontainer of Container A DCImageTile 3",
+                "elementType": "DCImageTile"
+              }
+            ],
+            "displayProps": {
+              "verticalSpacing": 18
+            },
+            "title": null,
+            "elementType": "DCContentContainer"
+          }
+        ],
+        "displayProps": {
+          "horizontalSpacing": 18
+        },
+        "title": "Contianer A",
+        "elementType": "DCContentContainer"
+      },
+      {
+        "layoutElements": [
+          {
+            "description": "",
+            "displayProps": {
+              "size": "small"
+            },
+            "id": "sectionb-tilewithimage1",
+            "image": {
+              "url": "https://picsum.photos/id/237"
+            },
+            "targetUrl": {
+              "url": "details/livestreams"
+            },
+            "title": "ImageTile 1",
+            "elementType": "DCImageTile"
+          },
+          {
+            "description": "",
+            "displayProps": {
+              "size": "small"
+            },
+            "id": "sectionb-tilewithimage2",
+            "image": {
+              "url": "https://picsum.photos/id/238"
+            },
+            "targetUrl": {
+              "url": "details/teams"
+            },
+            "title": "DCImageTile 2",
+            "elementType": "DCImageTile"
+          }
+        ],
+        "displayProps": {
+          "horizontalSpacing": 18,
+          "verticalSpacing": 18
+        },
+        "title": "Container B",
+        "elementType": "DCContentContainer"
+      }
+    ]
+  }

@@ -1,0 +1,90 @@
+{
+    "id": "livestreams",
+    "layout_type": "livestreams",
+    "layout_title": "livestreams layout title",
+    "layoutElements": [
+      {
+        "layoutElements": [
+          {
+            "description": "",
+            "displayProps": {
+              "size": "medium"
+            },
+            "id": "containerlivestreams-imagetile1",
+            "image": {
+              "url": "https://picsum.photos/id/2",
+              "targetUrl": "team1.thumbnail"
+            },
+            "targetUrl": {
+              "url": "details/teams"
+            },
+            "title": "TEAM 1",
+            "titleTarget": "team1.name",
+            "elementType": "DCImageTile"
+          },
+          {
+            "displayProps": {
+              "variant": "headline",
+              "alignContent": "center",
+              "alignItems": "center",
+              "justifyContent": "center"
+            },
+            "id": "containerlivestreams-text1",
+            "text": "VS",
+            "elementType": "DCText"
+          },
+          {
+            "id": "containerlivestreams-imagetile1",
+            "description": "",
+            "displayProps": {
+              "size": "medium"
+            },
+            "image": {
+              "url": "https://picsum.photos/id/1",
+              "targetUrl": "team2.thumbnail"
+            },
+            "targetUrl": {
+              "url": "details/teams"
+            },
+            "title": "TEAM 2",
+            "titleTarget": "team2.name",
+            "elementType": "DCImageTile"
+          }
+        ],
+        "displayProps": {
+          "horizontalSpacing": 18,
+          "flexDirection": "row"
+        },
+        "title": null,
+        "elementType": "DCContentContainer"
+      },
+      {
+        "layoutElements": [
+          {
+            "displayProps": {
+              "variant": "headline"
+            },
+            "id": "containerlivestreams-text1",
+            "text": "I'm dynamic text headline",
+            "textTarget": "headline",
+            "elementType": "DCText"
+          },
+          {
+            "displayProps": {
+              "variant": "body"
+            },
+            "id": "containerlivestreams-text2",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed facilisis mi, sit amet molestie nisi. Nam maximus massa et magna finibus, id accumsan mi ultricies. Curabitur vel scelerisque justo. Vivamus ac ultrices ex, nec dapibus enim. Etiam id finibus tellus. Etiam nisi risus, porta vel magna ac, imperdiet venenatis lectus. Curabitur eleifend diam nec magna consequat, sit amet ultricies mi iaculis. Nam eget semper augue. Pellentesque sed enim pretium, mattis nisi vulputate, lobortis libero. Nunc elit turpis, finibus a pharetra sit amet, sollicitudin vitae enim. Cras sed finibus diam. Duis tincidunt felis ut fermentum auctor. Cras augue felis, blandit vitae ante eget, efficitur scelerisque velit. Nulla in lorem leo. Morbi eu malesuada est. Cras tristique ac massa a egestas.",
+            "textTarget": "description",
+            "elementType": "DCText"
+          }
+        ],
+        "displayProps": {
+          "horizontalSpacing": 50,
+          "verticalSpacing": 30
+        },
+        "title": null,
+        "elementType": "DCContentContainer"
+      }
+    ]
+  }

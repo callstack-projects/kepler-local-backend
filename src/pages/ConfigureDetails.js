@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { documentaries, teams, suggestedforyou, livestreams } from '../contentTypes';
 import AddItemModal from '../components/AddItemModal';
 import './ConfigureDetails.css';
+import InteractiveLayout from '../components/InteractiveLayout';
 
 function ConfigureDetails() {
   const [detailsData, setDetailsData] = useState(null);
@@ -56,16 +57,25 @@ function ConfigureDetails() {
                 <div className="content-fields">
                   <h3>Content Type Fields:</h3>
                   <div className="fields-grid">
-                    {Object.entries(contentTypeData).map(([fieldName, fieldType]) => (
-                      <div key={fieldName} className="field-item">
-                        {typeof fieldType === 'string' && (
-                          <p>
-                            <strong>{fieldName}:</strong> 
-                            {fieldType}
-                          </p>
-                        )}
-                      </div>
-                    ))}
+                  {Object.entries(contentTypeData).map(([fieldName, fieldType]) => (
+                    <div key={fieldName} className="field-item">
+                      {typeof fieldType === 'string' ? (
+                        <p>
+                          <strong>{fieldName}:</strong> 
+                          {fieldType}
+                        </p>
+                      ) : (
+                        <div className="nested-fields">
+                          <strong>{fieldName}:</strong>
+                          {Object.entries(fieldType).map(([nestedKey, nestedValue]) => (
+                            <p key={nestedKey} className="nested-field">
+                              <span>{nestedKey}:</span> {nestedValue}
+                            </p>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
                   </div>
                 </div>
               )}
@@ -82,6 +92,10 @@ function ConfigureDetails() {
             >
               Add Item
             </button>
+            <InteractiveLayout 
+              detailsData={detailsData}
+              selectedSection={selectedSection}
+            />
           </div>
         )}
       </div>

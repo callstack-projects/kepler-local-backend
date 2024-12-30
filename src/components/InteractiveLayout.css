@@ -1,0 +1,49 @@
+.interactive-layout {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.layout-container {
+  min-height: 200px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.layout-type {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.interactive-layout {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .layout-container {
+    min-height: 200px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 1rem;
+  }
+  
+
+  
+  .container-content {
+    padding: 1rem;
+  }
+  
+  .layout-element {
+    background: #f0f0f0;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+  }
+  

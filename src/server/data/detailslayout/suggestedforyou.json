@@ -1,0 +1,21 @@
+{
+    "id": "suggestedforyou",
+    "layout_type": "suggestedforyou",
+    "layout_title": "suggestedforyou layout title",
+    "layoutElements": [
+      {
+        "layoutElements": [
+          {
+            "displayProps": {
+              "variant": "headline"
+            },
+            "id": "containerlivestreams-text1",
+            "text": "CONTENT FOR SUGGESTEDFORYOU COMING FROM API",
+            "elementType": "DCText"
+          }
+        ],
+        "title": null,
+        "elementType": "DCContentContainer"
+      }
+    ]
+  }

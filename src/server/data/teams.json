@@ -1,5 +1,4 @@
-{
-  "teams": [
+[
     {
       "team_name": "hot air balloon",
       "sport_type": "judo",
@@ -391,4 +390,3 @@
       "favorite": false
     }
   ]
-}

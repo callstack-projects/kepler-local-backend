@@ -1,5 +1,4 @@
-{
-  "detailslayout": [
+[
     {
       "id": "documentaries",
       "layout_type": "documentaries",
@@ -270,4 +269,4 @@
       ]
     }
   ]
-}
+

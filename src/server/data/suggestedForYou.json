@@ -1,5 +1,4 @@
-{
-  "suggestedforyou": [
+[
     {
       "show_name": "American Vagabond",
       "network": "Bluejam",
@@ -354,5 +353,4 @@
       "sport_type": "snowboarding",
       "id": "405c1699-57aa-4982-8aff-9f120369dc14"
     }
-  ]      
-}
+  ]

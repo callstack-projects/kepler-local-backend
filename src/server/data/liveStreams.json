@@ -1,5 +1,4 @@
-{
-  "livestreams": [
+[
     {
       "id": "50128bae-e954-4233-8e15-cd5867a31370",
       "stream_date": "2022-12-17T04:52:43Z",
@@ -83,4 +82,3 @@
       "title": "reinvent ubiquitous methodologies"
     }
   ]
-}

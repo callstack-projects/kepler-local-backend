@@ -1,6 +1,4 @@
-{
-  "carousellayout": [
-  
+[
     {
       "id": "fac0db1d-60ee-4ff9-9c3f-fc1ca24fa6be",
       "carouselType": "square",
@@ -38,4 +36,3 @@
       "endpoint": "documentaries"
     }
   ]
-}

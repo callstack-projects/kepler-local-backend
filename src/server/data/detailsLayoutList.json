@@ -1,5 +1,4 @@
-{
-  "detailslayout": [
+[
     {
       "id": "documentaries",
       "layout_type": "documentaries"
@@ -17,4 +16,4 @@
       "layout_type": "teams"
     }
   ]
-}
+

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { documentaries, teams, suggestedforyou, livestreams } from '../contentTypes';
+import AddItemModal from '../components/AddItemModal';
 import './ConfigureDetails.css';
 
 function ConfigureDetails() {
@@ -28,23 +29,13 @@ function ConfigureDetails() {
     setContentTypeData(contentTypeMap[selectedValue]);
   };
 
-  const handleAddItem = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const nestedData = detailsData?.detailslayout;
-
   return (
     <div className="configure-details">
       <h1>Configure Details</h1>
       <div className="two-column-layout">
         {/* Left Column */}
         <div className="left-column">
-          {nestedData && (
+          {detailsData && (
             <div>
               <h2>Details Layout</h2>
               
@@ -54,7 +45,7 @@ function ConfigureDetails() {
                 className="section-dropdown"
               >
                 <option value="">Select a section</option>
-                {nestedData?.map(section => (
+                {detailsData?.map(section => (
                   <option key={section.id} value={section.id}>
                     {section.layout_type}
                   </option>
@@ -83,32 +74,24 @@ function ConfigureDetails() {
         </div>
 
         {/* Right Column */}
-        <div className="right-column">
-          <button 
-            className="add-item-button"
-            onClick={handleAddItem}
-          >
-            Add Item
-          </button>
-        </div>
+        {selectedSection !== '' && (
+          <div className="right-column">
+            <button 
+              className="add-item-button"
+              onClick={() => setIsModalOpen(true)}
+            >
+              Add Item
+            </button>
+          </div>
+        )}
       </div>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <h2>Add New Item</h2>
-            <div className="modal-body">
-              {/* Add your form fields here */}
-              <p>Modal content goes here</p>
-            </div>
-            <div className="modal-footer">
-              <button className="modal-button cancel" onClick={closeModal}>Cancel</button>
-              <button className="modal-button save">Save</button>
-            </div>
-          </div>
-        </div>
-      )}
+      <AddItemModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        allData={detailsData}
+        selectedSection={selectedSection}
+      />
     </div>
   );
 }

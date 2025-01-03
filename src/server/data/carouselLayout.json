@@ -1,5 +1,11 @@
 [
     {
+      "id": "e77effd2-60fd-4a75-9921-ee1596c4d248",
+      "carouselType": "hero",
+      "carouselTitle": null,
+      "endpoint": "suggestedforyou"
+    },
+    {
       "id": "fac0db1d-60ee-4ff9-9c3f-fc1ca24fa6be",
       "carouselType": "square",
       "carouselTitle": "Live TV",

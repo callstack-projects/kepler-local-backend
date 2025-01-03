@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import ConfigureDetails from './pages/ConfigureDetails';
+import ConfigureCarousels from './pages/ConfigureCarousels';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/configure-details">Configure Details</Link>
+          <Link to="/configure-carousels">Configure Carousels</Link>
         </nav>
 
         <Routes>
@@ -18,6 +20,7 @@ function App() {
             </div>
           } />
           <Route path="/configure-details" element={<ConfigureDetails />} />
+          <Route path="/configure-carousels" element={<ConfigureCarousels />} />
         </Routes>
       </div>
     </Router>

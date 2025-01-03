@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Kepler Local Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A local backend service for managing carousel configurations with a React-based admin interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Visual carousel configuration interface
+- Draft & publish workflow for carousel layouts
+- Local storage support for work in progress
+- JSON-based data persistence
+- Real-time preview of carousel layouts
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Start the React development server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm run dev
+```
+The backend will run on http://localhost:5001 and the frontend on http://localhost:3000
 
-### `npm test`
+## Server Details 🚀
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application runs on two ports:
+| Service | URL | Purpose |
+|---------|-----|---------|
+| Backend API | `http://localhost:5001` | Handles data and configuration |
+| Frontend UI | `http://localhost:3000` | Configuration interface |
 
-### `npm run build`
+## API Reference 📡
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Core Endpoints
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/carousellayout` | `GET` | Fetch current carousel layout |
+| `/carousellayout` | `POST` | Deploy new configuration |
+| `/carousellayout/draft` | `POST` | Save work in progress |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Content Endpoints
+| Endpoint | Method | Purpose |
+|----------|--------|---------|
+| `/livestreams/:id` | `GET` | Stream information |
+| `/teams/:id` | `GET` | Team profiles |
+| `/documentaries/:id` | `GET` | Documentary details |
+| `/suggestedforyou/:id` | `GET` | Personalized content |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Configuration Interface 🎨
 
-### `npm run eject`
+### Key Features
+- 🖱️ **Interactive Editing**: Click any carousel title to modify
+- 💾 **Draft System**: Blue "Save Draft" button preserves work
+- ✨ **Publishing**: Green "Publish" button deploys changes
+- 🔄 **Real-time Preview**: Instant visual feedback
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Carousel Types
+| Style | Dimensions | Use Case |
+|-------|------------|----------|
+| Hero | 300x200px | Featured content |
+| Card | 120x180px | Standard listings |
+| Square | 150x150px | Grid layouts |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Data Architecture 📁
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### JSON Structure
+All configuration files reside in `src/server/data/`:
+```json
+src/server/data/
+├── carousellayout.json    # Main configuration
+├── liveStreamDetails.json # Stream data
+├── teams.json            # Team information
+├── documentaries.json    # Documentary catalog
+└── suggestedforyou.json  # Recommendations
+```

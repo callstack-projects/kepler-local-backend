@@ -102,3 +102,17 @@ app.listen(port, () => {
       console.log(`- http://localhost:${port}/documentaries/{id}`);
       console.log(`- http://localhost:${port}/suggestedforyou/{id}`);
 });
+
+app.post('/carousellayout', (req, res) => {
+  const newCarouselData = req.body;
+  const carouselPath = path.join(dataPath, 'carousellayout.json');
+  fs.writeFileSync(carouselPath, JSON.stringify(newCarouselData, null, 2));
+  res.json({ success: true, message: 'Carousel layout updated successfully' });
+});
+
+// app.post('/carousellayout/draft', (req, res) => {
+//   const draftData = req.body;
+//   const draftPath = path.join(dataPath, 'carousellayout-draft.json');
+//   fs.writeFileSync(draftPath, JSON.stringify(draftData, null, 2));
+//   res.json({ success: true, message: 'Draft saved successfully' });
+// });

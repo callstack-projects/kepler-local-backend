@@ -1,44 +1,25 @@
 [
   {
-    "id": "e77effd2-60fd-4a75-9921-ee1596c4d248",
+    "id": 1735932119449,
+    "carouselTitle": "HERO??? or not",
     "carouselType": "hero",
-    "carouselTitle": "Say so so so so",
     "endpoint": "suggestedforyou"
-  },
-  {
-    "id": "fac0db1d-60ee-4ff9-9c3f-fc1ca24fa6be",
-    "carouselType": "square",
-    "carouselTitle": "Live TV is On and On",
-    "endpoint": "livestreams"
-  },
-  {
-    "id": "cf5bafe0-023b-4ff9-9c3f-fc1ca24fa6be",
-    "carouselType": "card",
-    "carouselTitle": "All Teams",
-    "endpoint": "teams"
-  },
-  {
-    "id": "068f3841-023b-4de8-85d1-f410d1407528",
-    "carouselType": "square",
-    "carouselTitle": "Documentaries",
-    "endpoint": "documentaries"
-  },
-  {
-    "id": "c91f1389-845c-476d-820b-1aa88e7bf1a4",
-    "carouselType": "square",
-    "carouselTitle": "Bookmarks",
-    "endpoint": "livestreams"
   },
   {
     "id": "9fc13a87-af56-42ef-a66e-b88a88540cc9",
     "carouselType": "card",
     "carouselTitle": "Roland Garros",
-    "endpoint": "teams"
+    "endpoint": "suggestedforyou"
   },
   {
     "id": "5d21039f-3ba5-491b-b481-32ceb742ac71",
     "carouselType": "card",
     "carouselTitle": "Champions League",
     "endpoint": "documentaries"
+  },
+  {
+    "carouselTitle": "LOL",
+    "endpoint": "teams",
+    "carouselType": "square"
   }
 ]

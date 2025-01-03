@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import AddNewCarousel from '../components/AddNewCarousel';
 import './ConfigureCarousels.css';
+import { contenTypes } from '../contentTypes';
 
 function ConfigureCarousels() {
   const [carouselsData, setCarouselsData] = useState(null);
@@ -7,6 +9,8 @@ function ConfigureCarousels() {
   const [hasChanges, setHasChanges] = useState(false);
   const [isPublishing, setIsPublishing] = useState(false);
   const [dataToPublish, setDataToPublish] = useState(null);
+  const [showAddModal, setShowAddModal] = useState(false);
+  // const [selectedEndpoint, setSelectedEndpoint] = useState('');
 
   useEffect(() => {
     // Try to load from localStorage first
@@ -70,7 +74,26 @@ function ConfigureCarousels() {
       console.error('Failed to publish:', error);
     } finally {
       setIsPublishing(false);
+      setDataToPublish(null);
     }
+  };
+
+  const handleAddCarousel = (newCarousel) => {
+    setCarouselsData([newCarousel, ...carouselsData]);
+    setHasChanges(true);
+    setShowAddModal(false);
+  };
+
+  const handleRemoveCarousel = (carouselId) => {
+    setCarouselsData(carouselsData.filter(carousel => carousel.id !== carouselId));
+    setHasChanges(true);
+  };
+
+  const handleEndpointChange = (carouselId, newEndpoint) => {
+    setCarouselsData(carouselsData.map(carousel => 
+      carousel.id === carouselId ? { ...carousel, endpoint: newEndpoint } : carousel
+    ));
+    setHasChanges(true);
   };
 
   return (
@@ -91,7 +114,25 @@ function ConfigureCarousels() {
         >
           {isPublishing ? 'Publishing...' : 'Publish'}
         </button>
+        <button 
+          className="add-item-button"
+          onClick={() => setShowAddModal(true)}
+        >
+          Add Item
+        </button>
       </div>
+      
+      {showAddModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <AddNewCarousel 
+              onAdd={handleAddCarousel}
+              onClose={() => setShowAddModal(false)}
+            />
+          </div>
+        </div>
+      )}
+      
       <div className="carousels-list">
         {carouselsData && carouselsData.map((carousel, index) => (
           <div key={index} className="carousel-section">
@@ -115,7 +156,15 @@ function ConfigureCarousels() {
               )}
             </div>
             <div className="endpoint-label">
-              <strong>Endpoint:</strong> {carousel.endpoint}
+              <strong>Endpoint:</strong>
+              <select 
+                value={carousel.endpoint} 
+                onChange={(e) => handleEndpointChange(carousel.id, e.target.value)}
+              >
+                {Object.keys(contenTypes).map((key) => (
+                  <option key={key} value={key}>{key}</option>
+                ))}
+              </select>
             </div>
             <div className="rectangles-row">
               {[1, 2, 3, 4, 5, 6, 7].map((item) => (
@@ -126,11 +175,10 @@ function ConfigureCarousels() {
                 />
               ))}
             </div>
+            <button className="remove-button" onClick={() => handleRemoveCarousel(carousel.id)}>Remove</button>
           </div>
         ))}
       </div>
     </div>
   );
-}
-
-export default ConfigureCarousels;
+}export default ConfigureCarousels;

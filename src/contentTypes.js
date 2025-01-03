@@ -1,3 +1,10 @@
+export const contenTypes = {
+    'documentaries': 'documentaries',
+    'teams': 'teams',
+    'suggestedforyou': 'suggestedforyou',
+    'livestreams': 'livestreams',
+};
+
 export const documentaries = {
     "itemId": "text",
     "title": "text",

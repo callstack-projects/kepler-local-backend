@@ -34,7 +34,7 @@ The application runs on two ports:
 |----------|--------|-------------|
 | `/carousellayout` | `GET` | Fetch current carousel layout |
 | `/carousellayout` | `POST` | Deploy new configuration |
-| `/carousellayout/draft` | `POST` | Save work in progress |
+
 
 ### Content Endpoints
 | Endpoint | Method | Purpose |
